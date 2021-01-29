@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -9,18 +8,63 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="/style/main.css" />
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- START: Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top navbar-fixed-top navbar-store"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="/assets/logo.png" alt="Logo" />
+        </a>
 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <!-- START: Navbar Item -->
+        <div class="collapse navbar-collapse" id="navbar-responsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a href="#" class="nav-link btn btn-sm btn-secondary text-white"
+                >Sign Up</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a href="#" class="nav-link btn btn-sm btn-warning text-white"
+                >Sign In</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- END: Navbar Item -->
+      </div>
+    </nav>
+    <!-- END: Navbar -->
 
     <!-- Bootstrap Core Javascript -->
     <script src="vendor/jquery/jquery-3.5.1.slim.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>
