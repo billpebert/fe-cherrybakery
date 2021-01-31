@@ -11314,8 +11314,54 @@ footer p {
   background-color: #f3f3f3;
 }
 
+@media (max-width: 767.98px) {
+  nav .navbar-store {
+    background-color: #fff !important;
+  }
+}
+
 nav .container a img {
-  max-width: 48px;
-  max-height: 48px;
+  max-width: 120px;
+}
+
+@media (min-width: 992px) {
+  nav .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+nav .container .profile.picture {
+  max-height: 45px;
+}
+
+nav .container .card-badge {
+  display: inline-block;
+  min-width: 2em;
+  padding: 0.3em;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  background: #29a687;
+  color: #fefefe;
+  margin-left: -10px;
+}
+
+nav .navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transtition: background-color 300ms linear;
+}
+
+.pages-home h5, .pages-home .h5 {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.pages-home .store-trend-categories {
+  margin-top: 30px;
+}
+
+.pages-home .store-new-product {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */
