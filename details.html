@@ -12,27 +12,23 @@
 
   <body>
     <!-- START: Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top navbar-fixed-top navbar-store pt-3"
-      data-aos="fade-down"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-fixed-top navbar-store pt-3"
+      data-aos="fade-down"">
       <div class="container">
         <a href="index.html" class="navbar-brand">
           <img src="/assets/logo.png" alt="Logo" />
         </a>
-
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
         >
-          <span class="navbar-toggler-icon"> </span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- START: Navbar Item -->
-        <div class="collapse navbar-collapse" id="navbar-responsive">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a href="/index.html" class="nav-link">Home</a>
             </li>
@@ -90,10 +86,32 @@
           </ul>
           <!-- END: Mobile Menu -->
         </div>
-        <!-- END: Navbar Item -->
       </div>
     </nav>
     <!-- END: Navbar -->
+
+    <!-- START: Page Content  -->
+    <div class="page-content page-details">
+      <section class="store-breadcrumbs" data-aos="fade-down" data-aos-delay="100">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active">
+                    Product Details
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- END: Page Content -->
 
     <footer>
       <div class="container">
