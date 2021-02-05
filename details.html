@@ -114,16 +114,18 @@
       <section class="store-gallery" id="gallery">
         <div class="container">
           <div class="row">
+            <!-- div preview image -->
             <div class="col-lg-8" data-aos="zoom-in">
               <transition name="slide-fade" mode="out-in">
-                <img :src="photos[activePhoto].url" :key="photos[activePhoto].id" class="w-100 main-image" alt="">
+                <img :src="photos[activePhoto].url" :key="photos[activePhoto].id" class="w-100 main-image" alt=""/>
               </transition>
             </div>
             <div class="col-lg-2">
               <div class="row">
+                <!-- div vue.js list image -->
                 <div class="col-3 col-lg-12 mt-2 mt-lg-0" v-for="(photo, index) in photos" :key="photo.id" data-aos="zoom-in" data-aos-delay="100">
-                  <a href="" @click="changeActive(index)">
-                    <img :src="photo.url" alt="" class="w-100 thumbnail-image" :class="{ active: index == activePhoto }">
+                  <a href="#" @click="changeActive(index)">
+                    <img :src="photo.url" :class="{ active: index == activePhoto }" alt="" class="w-100 thumbnail-image"/>
                   </a>
                 </div>
               </div>
@@ -131,6 +133,40 @@
           </div>
         </div>
       </section>
+
+      <div class="store-details-container" data-aos="fade-up">
+        <section class="store-heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1>Cake Blablabla</h1>
+                <div class="owner">Cherry Bakery</div>
+                <div class="price">Rp. 1.500.000</div>
+              </div>
+              <div class="col-lg-2" data-aos="zoom-in">
+                <a href="/cart.html" class="btn btn-success px-4 text-white btn-block mb-3">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="store-description">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
     <!-- END: Page Content -->
 
@@ -164,19 +200,19 @@
           activePhoto: 0,
           photos: [
             {
-              id: 0,
+              id: 1,
               url: "/assets/images/details-image-1.jpg"
             },
             {
-              id: 1,
+              id: 2,
               url: "/assets/images/details-image-2.jpg"
             },
             {
-              id: 2,
+              id: 3,
               url: "/assets/images/details-image-3.jpg"
             },
             {
-              id: 3,
+              id: 4,
               url: "/assets/images/details-image-4.jpg"
             },
           ],
