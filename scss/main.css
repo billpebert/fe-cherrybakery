@@ -10753,8 +10753,8 @@ nav .container .card-badge {
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 300ms linear;
+  background-color: #fff5ff !important;
+  transition: background-color 200ms linear;
 }
 
 .component-categories {
