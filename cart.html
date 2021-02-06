@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/main.css" />
+  </head>
+
+  <body>
+    <!-- START: Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-fixed-top navbar-store pt-3 bg-white"
+      data-aos="fade-down"">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="assets/logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Kategori</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Hubungi Kami</a>
+            </li>
+          </ul>
+
+          <!-- START: Desktop Menu -->
+          <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <img
+                  src="assets/user_pc.png"
+                  alt=""
+                  class="rounded-circle me-2 profile-picture"
+                  style="width: 45px; height: 45px"
+                />
+                Hi, User!
+              </a>
+              <div class="dropdown-menu">
+                <a href="dashboard.html" class="dropdown-item">Dashboard</a>
+                <a href="dashboard-account.html" class="dropdown-item"
+                  >Settings</a
+                >
+                <div class="dropdown-divider"></div>
+                <a href="/" class="dropdown-item">Logout</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link d-inline-block mt-2">
+                <img src="assets/icons/icon-cart-fill.svg" alt="cart" />
+                <div class="card-badge me-4">23</div>
+              </a>
+            </li>
+          </ul>
+          <!-- END: Desktop Menu -->
+
+          <!-- START: Mobile Menu -->
+          <ul class="navbar-nav d-block d-lg-none">
+            <li class="nav-item">
+              <a href="" class="nav-link"> Hi, User Mobile </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link d-inline-block"> Cart </a>
+            </li>
+          </ul>
+          <!-- END: Mobile Menu -->
+        </div>
+      </div>
+    </nav>
+    <!-- END: Navbar -->
+
+    <!-- START: Page Content  -->
+    <div class="page-content page-cart">
+      <section class="store-breadcrumbs" data-aos="fade-down" data-aos-delay="100">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active">
+                    Cart
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="store-cart">
+        <div class="container">
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 table-responsive">
+              <table class="table table-borderless table-cart">
+                <thead>
+                  <tr>
+                    <td>Image</td>
+                    <td>Name &amp Seller</td>
+                    <td>Pricer</td>
+                    <td>Menu</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="width: 25%;">
+                      <img src="assets/images/details-image-1.jpg" alt="" class="cart-image w-100">
+                    </td>
+                    <td style="width: 35%;">
+                      <div class="product-title">Halu Kuew</div>
+                      <div class="product-subtitle">by blablabla</div>
+                    </td>
+                    <td style="width: 35%;">
+                      <div class="product-title">Rp. 1.500.000</div>
+                      <div class="product-subtitle">IDR</div>
+                    </td>
+                    <td style="width: 20%;">
+                      <a href="" class="btn btn-remove-cart">Remove</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="width: 25%;">
+                      <img src="assets/images/details-image-3.jpg" alt="" class="cart-image w-100">
+                    </td>
+                    <td style="width: 35%;">
+                      <div class="product-title">Kue Ratu</div>
+                      <div class="product-subtitle">by blablabla</div>
+                    </td>
+                    <td style="width: 35%;">
+                      <div class="product-title">Rp. 2.500.000</div>
+                      <div class="product-subtitle">IDR</div>
+                    </td>
+                    <td style="width: 20%;">
+                      <a href="" class="btn btn-remove-cart">Remove</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="width: 25%;">
+                      <img src="assets/images/details-image-4.jpg" alt="" class="cart-image w-100">
+                    </td>
+                    <td style="width: 35%;">
+                      <div class="product-title">Bronces Konces</div>
+                      <div class="product-subtitle">by blablabla</div>
+                    </td>
+                    <td style="width: 35%;">
+                      <div class="product-title">Rp. 500.000</div>
+                      <div class="product-subtitle">IDR</div>
+                    </td>
+                    <td style="width: 20%;">
+                      <a href="" class="btn btn-remove-cart">Remove</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- END: Page Content -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="pt-4 pb-2">
+              2020 Copyright CherryBakery. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Core Javascript -->
+    <script src="vendor/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="vendor/vue/vue.js"></script>
+    <script>
+      var gallery = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 0,
+          photos: [
+            {
+              id: 1,
+              url: "assets/images/details-image-1.jpg"
+            },
+            {
+              id: 2,
+              url: "assets/images/details-image-2.jpg"
+            },
+            {
+              id: 3,
+              url: "assets/images/details-image-3.jpg"
+            },
+            {
+              id: 4,
+              url: "assets/images/details-image-4.jpg"
+            },
+          ],
+        },
+        methods: {
+          changeActive(id){
+            this.activePhoto = id;
+          }
+        }
+      })
+    </script>
+    <script src="script/navbar-scroll.js"></script>
+  </body>
+</html>
