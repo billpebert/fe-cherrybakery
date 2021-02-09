@@ -1,52 +1,3 @@
-// nav {
-//   .navbar-store {
-//     @include media-breakpoint-down(md) {
-//       background-color: #fff !important;
-//     }
-//   }
-//   .container {
-//     a {
-//       img {
-//         max-width: 130px;
-//       }
-//     }
-
-//     .navbar-collapse {
-//       .navbar-nav {
-//         .nav-item {
-//           .nav-link {
-//             @include media-breakpoint-up(lg) {
-//               margin-left: 10px;
-//               margin-right: 10px;
-//             }
-//           }
-//         }
-//       }
-//     }
-
-//     .profile.picture {
-//       max-height: 45px;
-//     }
-
-//     .card-badge {
-//       display: inline-block;
-//       min-width: 2em;
-//       padding: 0.3em;
-//       border-radius: 50%;
-//       font-size: 10px;
-//       text-align: center;
-//       background: #29a687;
-//       color: #fefefe;
-//       margin-left: -10px;
-//     }
-//   }
-// }
-// .navbar-fixed-top.scrolled {
-//   background-color: #fff !important;
-//   // background-color: rgba(255, 245, 255, 1) !important;
-//   transition: background-color 200ms linear;
-// }
-
 .navbar-store {
   @include media-breakpoint-down(md) {
     background-color: #fff !important;
@@ -76,9 +27,8 @@
     color: #fefefe;
     margin-left: -10px;
   }
-
-  .navbar-fixed-top.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
-  }
+}
+.navbar-fixed-top.scrolled {
+  background-color: rgba(255, 245, 255, 1) !important;
+  transition: background-color 200ms linear;
 }
