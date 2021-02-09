@@ -11,8 +11,8 @@
       margin-top: 0;
     }
 
-    .btn-signup {
-      @include button-variant(#f3f3f3, transparent);
+    .btn-go-index {
+      @include button-variant(#f3f3f3);
       color: #bbbbbb;
     }
   }
