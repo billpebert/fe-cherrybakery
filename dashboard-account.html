@@ -42,13 +42,13 @@
             </a>
             <a
               href="dashboard-settings.html"
-              class="list-group-item list-group-item-action active"
+              class="list-group-item list-group-item-action"
             >
               Store Settings
             </a>
             <a
               href="dashboard-account.html"
-              class="list-group-item list-group-item-action"
+              class="list-group-item list-group-item-action active"
             >
               My Account
             </a>
@@ -145,8 +145,8 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Store Settings</h2>
-                <p class="dashboard-subtitle">Make store that profitable</p>
+                <h2 class="dashboard-title">My Account</h2>
+                <p class="dashboard-subtitle">Update your current profile</p>
               </div>
               <div class="dashboard-content">
                 <div class="row">
@@ -154,70 +154,116 @@
                     <form action="">
                       <div class="card">
                         <div class="card-body">
-                          <div class="row">
+                          <div class="row mb-2">
                             <div class="col-md-6">
                               <div class="form-group mb-3">
-                                <label for="">Nama Toko</label>
+                                <label for="name">Your Name</label>
                                 <input
                                   type="text"
-                                  name="store_name"
+                                  id="name"
                                   class="form-control"
+                                  name="name"
+                                  value=""
                                 />
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group mb-3">
-                                <label for="">Kategori</label>
-                                <select
-                                  name="kategori"
-                                  id=""
-                                  class="form-select"
-                                >
-                                  <option value="" selected hidden>
-                                    Select Category
-                                  </option>
-                                  <option value="">Kue 1</option>
-                                  <option value="">Kue 2</option>
-                                </select>
+                                <label for="email">Email</label>
+                                <input
+                                  type="email"
+                                  id="email"
+                                  class="form-control"
+                                  name="email"
+                                  value=""
+                                />
                               </div>
                             </div>
                             <div class="col-md-6">
-                              <!-- START: Radio open store -->
                               <div class="form-group mb-3">
-                                <label for="">Store</label>
-                                <p class="text-muted">
-                                  Apakah saat ini toko anda buka?
-                                </p>
-                                <div class="form-check form-check-inline">
-                                  <input
-                                    class="form-check-input"
-                                    type="radio"
-                                    name="is_store_open"
-                                    id="openStoreTrue"
-                                    value="true"
-                                  />
-                                  <label
-                                    class="form-check-label"
-                                    for="openStoreTrue"
-                                    >Buka</label
-                                  >
-                                </div>
-                                <div class="form-check form-check-inline">
-                                  <input
-                                    class="form-check-input"
-                                    type="radio"
-                                    name="is_store_open"
-                                    id="openStoreFalse"
-                                    value="false"
-                                  />
-                                  <label
-                                    class="form-check-label"
-                                    for="openStoreFalse"
-                                    >Tutup Sementara</label
-                                  >
-                                </div>
+                                <label for="addressOne">Address 1</label>
+                                <input
+                                  type="text"
+                                  id="addressOne"
+                                  class="form-control"
+                                  name="addressOne"
+                                  value=""
+                                />
                               </div>
-                              <!-- End: Radio open store -->
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group mb-3">
+                                <label for="addressTwo">Address 2</label>
+                                <input
+                                  type="text"
+                                  id="addressTwo"
+                                  class="form-control"
+                                  name="addressTwo"
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group mb-3">
+                                <label for="province">Provinsi</label>
+                                <select
+                                  name="province"
+                                  id="province"
+                                  class="form-control"
+                                >
+                                  <option value="">Provinsi 1</option>
+                                  <option value="">Provinsi 2</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group mb-3">
+                                <label for="city">Kota</label>
+                                <select
+                                  name="city"
+                                  id="city"
+                                  class="form-control"
+                                >
+                                  <option value="">Kota 1</option>
+                                  <option value="">Kota 2</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group mb-3">
+                                <label for="postalCode">Kode Pos</label>
+                                <input
+                                  type="text"
+                                  id="postalCode"
+                                  class="form-control"
+                                  name="postalCode"
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group mb-3">
+                                <label for="country">Negara</label>
+                                <input
+                                  type="text"
+                                  id="country"
+                                  class="form-control"
+                                  name="country"
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group mb-3">
+                                <label for="mobilePhone">Mobile Phone</label>
+                                <input
+                                  type="num"
+                                  id="addressTwo"
+                                  class="form-control"
+                                  name="addressTwo"
+                                  value=""
+                                />
+                              </div>
                             </div>
                           </div>
                           <div class="row">
