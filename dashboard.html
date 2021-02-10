@@ -48,14 +48,15 @@
       <!-- START: Page Content -->
       <div class="" id="page-content-wrapper">
         <!-- START: Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-store pt-3 bg-white"
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-store pt-3"
           data-aos="fade-down"">
 
           <div class=" container-fluid">
             <button class="btn btn-secondary d-md-none mr-auto mr-2" id="menu-toggle">
               &laquo; Menu
             </button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
               aria-controls="navbarResponsive">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -101,6 +102,132 @@
         <!-- END: Navbar -->
 
         <!-- START: Content -->
+        <div class="section-content section-dashboard-home" data-aos="fade-up">
+          <div class="container-fluid">
+            <div class="dashboard-heading">
+              <h2 class="dashboard-title">
+                Dashboard
+              </h2>
+              <p class="dashboard-subtitle">Look what you've made today!</p>
+            </div>
+            <div class="dashboard-content">
+              <!-- START: Card Item -->
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <div class="dashboard-card-title">
+                        Customer
+                      </div>
+                      <div class="dashboard-card-subtitle">
+                        123.002
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <div class="dashboard-card-title">
+                        Revenue
+                      </div>
+                      <div class="dashboard-card-subtitle">
+                        Rp. 2.001.276
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <div class="dashboard-card-title">
+                        Transactions
+                      </div>
+                      <div class="dashboard-card-subtitle">
+                        323
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END: Card Item -->
+
+              <!-- START: Recent Transaction -->
+              <div class="row mt-3">
+                <div class="col-12 mt-2">
+                  <h5 class="mb-3">Recent Transactions</h5>
+                  <!-- card 1 -->
+                  <a href="dashboard-transactions-details.html" class="card card-list d-block">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img src="assets/images/details-image-1.jpg" alt="">
+                        </div>
+                        <div class="col-md-4">
+                          Tanboki Chokky
+                        </div>
+                        <div class="col-md-3">
+                          Billpebert
+                        </div>
+                        <div class="col-md-3">
+                          12 Februari 2021
+                        </div>
+                        <div class="col-md-1 d-none d-md-block">
+                          <img src="assets/icons/icon-arrow-right.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- card 2 -->
+                  <a href="dashboard-transactions-details.html" class="card card-list d-block">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img src="assets/images/details-image-3.jpg" alt="">
+                        </div>
+                        <div class="col-md-4">
+                          Irwana Huis
+                        </div>
+                        <div class="col-md-3">
+                          Girlband
+                        </div>
+                        <div class="col-md-3">
+                          2 Desember 2020
+                        </div>
+                        <div class="col-md-1 d-none d-md-block">
+                          <img src="assets/icons/icon-arrow-right.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- card 3 -->
+                  <a href="dashboard-transactions-details.html" class="card card-list d-block">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img src="assets/images/details-image-5.jpg" alt="">
+                        </div>
+                        <div class="col-md-4">
+                          Tiramicin
+                        </div>
+                        <div class="col-md-3">
+                          Boyband XoXo
+                        </div>
+                        <div class="col-md-3">
+                          5 Maret 2021
+                        </div>
+                        <div class="col-md-1 d-none d-md-block">
+                          <img src="assets/icons/icon-arrow-right.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- END: Recent Transaction -->
+            </div>
+          </div>
+        </div>
         <!-- End: Content -->
       </div>
       <!-- END: Page Content -->
@@ -113,6 +240,12 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    $('#menu-toggle').click(function (e){
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
   </script>
 </body>
 
