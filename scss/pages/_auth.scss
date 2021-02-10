@@ -9,11 +9,11 @@
     margin-top: 0;
     color: #0c0d36;
   }
-  // .form-control,
-  // .form-select {
-  //   border-radius: 8px;
-  //   background: #f3f3f3;
-  // }
+  .form-control,
+  .form-select {
+    border-radius: 8px;
+    background: #f3f3f3;
+  }
 
   .btn-signup {
     @include button-variant(#f3f3f3, transparent);

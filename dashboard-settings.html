@@ -24,7 +24,7 @@
           <div class="list-group list-group-flush">
             <a
               href="dashboard.html"
-              class="list-group-item list-group-item-action active"
+              class="list-group-item list-group-item-action"
             >
               Dashboard
             </a>
@@ -42,7 +42,7 @@
             </a>
             <a
               href="dashboard-settings.html"
-              class="list-group-item list-group-item-action"
+              class="list-group-item list-group-item-action active"
             >
               Store Settings
             </a>
@@ -145,121 +145,86 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Dashboard</h2>
-                <p class="dashboard-subtitle">Look what you've made today!</p>
+                <h2 class="dashboard-title">Store Settings</h2>
+                <p class="dashboard-subtitle">Make store that profitable</p>
               </div>
               <div class="dashboard-content">
-                <!-- START: Card Item -->
                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Customer</div>
-                        <div class="dashboard-card-subtitle">123.002</div>
+                  <div class="col-12">
+                    <form action="">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group mb-3">
+                                <label for="">Nama Toko</label>
+                                <input
+                                  type="text"
+                                  name="store_name"
+                                  class="form-control"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group mb-3">
+                                <label for="">Kategori</label>
+                                <select
+                                  name="kategori"
+                                  id=""
+                                  class="form-select"
+                                >
+                                  <option value="" selected hidden>
+                                    Select Category
+                                  </option>
+                                  <option value="">Kue 1</option>
+                                  <option value="">Kue 2</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <!-- START: Radio open store -->
+                              <div class="form-group mb-3">
+                                <label for="">Store</label>
+                                <p class="text-muted">
+                                  Apakah saat ini toko anda buka?
+                                </p>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="is_store_open"
+                                    id="openStoreTrue"
+                                    value="true"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="openStoreTrue"
+                                    >Buka</label
+                                  >
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="is_store_open"
+                                    id="openStoreFalse"
+                                    value="false"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="openStoreFalse"
+                                    >Tutup Sementara</label
+                                  >
+                                </div>
+                              </div>
+                              <!-- End: Radio open store -->
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Revenue</div>
-                        <div class="dashboard-card-subtitle">Rp. 2.001.276</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Transactions</div>
-                        <div class="dashboard-card-subtitle">323</div>
-                      </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
-                <!-- END: Card Item -->
-
-                <!-- START: Recent Transaction -->
-                <div class="row mt-3">
-                  <div class="col-12 mt-2">
-                    <h5 class="mb-3">Recent Transactions</h5>
-                    <!-- card 1 -->
-                    <a
-                      href="dashboard-transactions-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img
-                              src="assets/images/details-image-1.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-4">Tanboki Chokky</div>
-                          <div class="col-md-3">Billpebert</div>
-                          <div class="col-md-3">12 Februari 2021</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img
-                              src="assets/icons/icon-arrow-right.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <!-- card 2 -->
-                    <a
-                      href="dashboard-transactions-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img
-                              src="assets/images/details-image-3.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-4">Irwana Huis</div>
-                          <div class="col-md-3">Girlband</div>
-                          <div class="col-md-3">2 Desember 2020</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img
-                              src="assets/icons/icon-arrow-right.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <!-- card 3 -->
-                    <a
-                      href="dashboard-transactions-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img
-                              src="assets/images/details-image-5.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-4">Tiramicin</div>
-                          <div class="col-md-3">Boyband XoXo</div>
-                          <div class="col-md-3">5 Maret 2021</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img
-                              src="assets/icons/icon-arrow-right.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <!-- END: Recent Transaction -->
               </div>
             </div>
           </div>
